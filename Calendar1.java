@@ -34,10 +34,6 @@ public class Calendar1 {
 				howManySundaysOnFirstOfMounth++;
 			}	
 			advance();
-			debugDaysCounter++;
-			if (debugDaysCounter == 10){
-				break;
-			}
 		}
 		System.out.println("During the 20th century, " + howManySundaysOnFirstOfMounth + " Sundays fell on the first day of the mount");
 	 }

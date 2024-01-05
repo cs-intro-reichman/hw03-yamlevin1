@@ -23,6 +23,7 @@ public class Calendar {
 		// were advanced so far.
 		int givenYear = Integer.parseInt(args[0]);
 
+		//Checks the days until the given days
 		while (year < givenYear) {
 			advance();
 		}

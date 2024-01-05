@@ -29,7 +29,7 @@ public class Calendar1 {
 				System.out.println();
 			}
 
-			if (dayOfWeek == 1 && dayOfMonth == 1) {
+			if ((dayOfWeek == 1) && (dayOfMonth == 1)) {
 				howManySundaysOnFirstOfMounth++;
 			}	
 			advance();

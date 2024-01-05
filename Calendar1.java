@@ -42,6 +42,13 @@ public class Calendar1 {
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
 		if (dayOfMonth == nDaysInMonth(month, year)) {
+			if(dayOfWeek != 7){
+			dayOfWeek++;
+		}
+		else{
+			dayOfWeek= 1;
+		}
+
 			if(month == 12){
 				year++;
 				month = 1;
@@ -54,13 +61,6 @@ public class Calendar1 {
 		}
 		else{
 			dayOfMonth++;
-		}
-		
-		if(dayOfWeek != 7){
-			dayOfWeek++;
-		}
-		else{
-			dayOfWeek= 1;
 		}
 	 } 
 		 

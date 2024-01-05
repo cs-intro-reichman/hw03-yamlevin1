@@ -17,10 +17,19 @@ public class Calendar {
 		// Advances the date and the day-of-the-week from 1/1/1900 till 31/12/1999, inclusive.
 	    // Prints each date dd/mm/yyyy in a separate line. If the day is a Sunday, prints "Sunday".
 	    // The following variable, used for debugging purposes, counts how many days were advanced so far.
-		year = Integer.parseInt(args[0]);  
-		isLeapYear(year);
+		//int givenYear = Integer.parseInt(args[0]);
+		int givenYear = 2021;
 
-		while (month <= 12){
+		while (year < givenYear) {
+			if(dayOfWeek != 7){
+				dayOfWeek++;
+			}
+			else{
+				dayOfWeek = 1;
+			}
+			advance();
+		}  
+		while (year != (givenYear + 1)){
 			System.out.print(dayOfMonth + "/" + month + "/" + year);
 			
 			if (dayOfWeek == 1){
@@ -30,8 +39,7 @@ public class Calendar {
 				System.out.println();
 			}
 			advance();
-			}	
-			
+			}		
 		}
 	
 	 // Advances the date (day, month, year) and the day-of-the-week.

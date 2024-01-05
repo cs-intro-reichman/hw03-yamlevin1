@@ -41,7 +41,7 @@ public class Calendar1 {
 	 // If the month changes, sets the number of days in this month.
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
-		if (month == 12 && dayOfMonth == nDaysInMonth(month, year)) {
+		if ((month == 12) && (dayOfMonth == nDaysInMonth(month, year))) {
 			year++;
 			month = 1;
 			dayOfMonth = 1;

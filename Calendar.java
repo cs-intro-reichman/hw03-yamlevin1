@@ -20,7 +20,7 @@ public class Calendar {
 		//int givenYear = Integer.parseInt(args[0]);
 		int givenYear = 2021;
 
-		while (year < givenYear) {
+		/*while (year < givenYear) {
 			if(dayOfWeek != 7){
 				dayOfWeek++;
 			}
@@ -39,7 +39,7 @@ public class Calendar {
 				System.out.println();
 			}
 			advance();
-			}		
+			}	*/	
 		}
 	
 	 // Advances the date (day, month, year) and the day-of-the-week.
